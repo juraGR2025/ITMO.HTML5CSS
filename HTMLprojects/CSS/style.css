@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');
+body{
+background: #b8a594;
+font-family: 'Courier New', Courier, monospace;
+position: relative;
+}
+fieldset {
+ background: #e2d5af; /* Цвет фона */
+ color: rgb(25, 23, 29); /* Цвет текста */
+ padding: 20px; /* Поля вокруг текста */
+ border-radius: 15px; /* Уголки */
+ border: 2px solid sienna ;
+ margin: 4px;
+ max-width: 70%;
+ position: relative;
+ 
+}
+fieldset h3{
+  font-family: sans-serif;
+  color: sienna;
+}
+label{
+  display: inline-block;
+  clear: left;
+  width: 150px;
+  text-align: right;
+}
+input {
+ display: inline-block;
+}
+header h2{
+font-family: 'Kelly Slab', sans-serif;
+color: rgb(50, 146, 224);
+margin: 5px;
+border-bottom: 2px solid rgb(50, 146, 224);
+
+}
+
+header h3{
+font-family: sans-serif;
+color: rgb(18, 71, 114);
+margin: 2px;
+}
+article{
+max-width: 33%;
+padding: 5px;
+margin: 5px;
+text-align: justify;
+}
+article a {
+  color: rgb(18, 71, 114);
+  margin: 5px;
+ 
+}
+img {
+  height: 100%; 
+  width: 250px; 
+  background-size: cover; 
+  background-position: center;
+}
+#go-home {
+  width: 20px;  
+}
+#manual{
+  overflow-y: scroll; /* Добавляем полосу прокрутки */
+  overflow-x: none; /* Добавляем полосу прокрутки */
+  width: auto; /* Ширина блока */
+  height: 250px; /* Высота блока */
+  padding: 5px; /* Поля вокруг текста */
+  border: solid 1px rgb(173, 82, 82); /* Параметры рамки */
+  
+}
+a:link    {color:rgb(52, 83, 218); text-decoration: underline}
+a:visited {color:rgb(228, 93, 40); text-decoration:none}
+a:hover   {color:red; text-decoration:underline}
+a:active  {color:yellow; text-decoration:none}
+input:hover {border:2px solid rgb(156, 199, 56);}
+input:focus {border:2px solid rgb(55, 199, 26);}
+ol::before{
+  content: " ----- ";
+}
+ol::after{
+  content: " ----- ";
+}
+em{
+  color:red; 
+}

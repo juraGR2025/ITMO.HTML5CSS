@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./CSS/style.css"/>
+    <script charset="utf-8" src="./js/main.js"></script>
+      <title>Рабочее место руководителя</title>
+  </head>
+  <body>
+    <header>
+      <h2>Рабочее место руководителя</h2>
+      <h3>Панель инструментов</h3>
+
+    </header>
+    <br />
+
+    <main>
+      <a href="./myindex.html"><img id= "go-home" src="./domoi.jpg"></a>
+      <form action="formdata" method="post" name="form1">
+        <fieldset>
+        <legend><h3>Выберите способ управляющего воздействия</h3></legend>
+         <p><select id="chief-work" name="list1" required>
+         <option value="выберите из списка" >Выберите из списка</option>
+         <option value="наорать">Наорать</option>
+         <option value="выдать премию">Выдать премию</option>
+         <option value="похвалить">Похвалить</option>
+         <option value="обругать">Обругать</option>
+         <option value="уволить">Уволить</option>
+         </select></p><br />
+         <p>Выберите сотрудника</p>
+            <input class="emploeeCheckbox" type="checkbox" name="emploee1" value="Albert Einstein"/>Сотрудник № 1
+        
+            <input class="emploeeCheckbox" type="checkbox" name="emploee2" value="Jim Morrison"/>Сотрудник № 2
+        
+            <input class="emploeeCheckbox" type="checkbox" name="emploee3" value="Sheldon Lee Cooper"/>Сотрудник № 3
+       
+            <input class="emploeeCheckbox" type="checkbox" name="emploee4" value="Юрий Гравченко">Сотрудник № 4
+          
+            <p><input id="use-input" type="submit" value="Применить" onclick="return false;"></p><!--onclick="return false;" оставляет на исходной странице-->
+
+      </fieldset>
+     
+      </form>
+      <section>
+        <article>
+            <a href="./employee1personalPage.html" target="_blank">Перейти на персональную страничку</a>
+            <p>
+                Сотрудник № 1
+            </p>
+        </article>
+
+        <article>
+            <a href="./employee2personalPage.html" target="_blank">Перейти на персональную страничку</a>
+            <p>
+                Сотрудник № 2
+            </p>
+        </article>
+
+        <article>
+            <a href="./employee3personalPage.html" target="_blank">Перейти на персональную страничку</a>
+            <p>
+                Сотрудник № 3
+            </p>
+        </article>
+
+        <article>
+            <a href="./employee4personalPage.html" target="_blank">Перейти на персональную страничку</a>
+            <p>
+                Сотрудник № 4
+            </p>
+        </article>
+    </section>
+
+    </main>
+    
+    <br />  <br />
+
+    <footer align="center">&copy; Copyright 2022</footer>
+
+  </body>
+  <script charset="utf-8" src="./js/main.js"></script>
+</html>

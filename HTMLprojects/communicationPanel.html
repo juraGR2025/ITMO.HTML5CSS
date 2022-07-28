@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./CSS/style.css"/>
+    <script charset="utf-8" src="./js/main.js"></script>
+      <title>Панель для связи с руководством</title>
+  </head>
+  <body>
+    <header>
+      <h2>Панель для связи с руководством</h2>
+      <h3>Здесь вы можете отправить доклад руководителю</h3>
+
+    </header>
+    <br />
+
+    <main>
+      <a href="./myindex.html"><img id= "go-home" src="./domoi.jpg"></a>
+      <section>
+        
+        <article>
+            <a href="./personnelManagementPanel.html">Управление персоналом</a>
+            <p>
+                Перейти к управлению подчиненными.
+            </p>
+        </article>
+        <form>
+          <fieldset id="radio-btn" name="myfield">
+            <legend><h3>Выберите стиль управления</h3></legend>
+            <p>
+              <input id="hard" onchange="ChangeStyle()" type="radio" value="hard" checked name="management style"/>жесткий
+              <input id="soft" onchange="ChangeStyle()" type="radio" value="soft" name="management style"/>мягкий
+              <input id="semihard" onchange="ChangeStyle()" type="radio" value="hard/soft" name="management style"/>полужесткий
+              <input id="semi-soft" onchange="ChangeStyle()" type="radio" value="soft/hard" name="management style"/>полумягкий
+            </p>
+
+          </fieldset>
+        </form>
+
+    </section>
+
+    <form>
+      <fieldset>
+        <legend><h3>Контактная информация</h3></legend>
+        <div class="main"><!-- Для того, чтобы прижать поля к заголовкам, обернём всю конструкцию блоком <div class="main">-->
+
+        <p><label for="name">Имя, фамилия <em>*</em></label><input type="text" required id="name" autocomplete on pattern="^[^\s]*\s[^\s]*"></p><!--Регулярное выражения для проверки на ровно два слова-->
+        <p><label for="position">Должность <em>*</em></label><input type="text" required id="position" autocomplete on pattern="^[А-Яа-яЁё\s]+$"></p><!--Регулярное выражения для проверки на любое слово на русском-->
+        <p id="e-mail"><label for="email">E-mail <em>&nbsp</em> </label><input type="email" required id="email" autocomplete on pattern="^.+@.+\..+$"></p><!--Регулярное выражения для проверки email-->
+        
+      </div>
+
+      </fieldset>
+
+    <fieldset>
+        <legend><h3>Напишите свое сообщение</h3></legend>
+      <textarea cols="100" rows="5">Текст сообщения</textarea>
+    </fieldset>
+
+    <p><input id="array-change" onclick="unReal()" type="submit" value="Отправить"></p>
+    </form>
+
+    <section>
+      Контакты. Номер телефона и почтовый адрес начальника.
+    </section>
+
+    </main>
+
+   </body>
+   <script charset="utf-8" src="./js/main.js"></script>
+</html>
+
+
